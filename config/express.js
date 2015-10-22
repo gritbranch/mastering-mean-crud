@@ -47,6 +47,7 @@ module.exports = function() {
 
 	require('../app/routes/index.server.routes.js')(app); //Requires the routing index and executes it passing the app as paramater.
 	require('../app/routes/users.server.routes.js')(app); //Requires the routing users and executes it passing the app as paramater.
+	require('../app/routes/articles.server.routes.js')(app); //Requires the routing articles and executes it passing the app as paramater.
 	
 	//loads express.static() to serve static files. This middleware takes one argument to determine the location of the static folder
 	app.use(express.static('./public'));
